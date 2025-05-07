@@ -33,4 +33,4 @@ if num_terms <= 0:
 print("Please enter a positive integer.")
 else:
 # Call the function to generate Fibonacci numbers
-generats_fibonacci(num_terms)
+generate_fibonacci(num_terms)
