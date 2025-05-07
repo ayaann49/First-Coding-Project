@@ -1,0 +1,36 @@
+#Program to print Fibonacci Numbers
+
+#Function to generate Fibonacci numbers
+def generate_fibonacci(n):
+#Initial two Fibonacci numbers
+a = 0
+b = 1
+count = 0  #To keep track of how many numbers have been printed
+
+print("Fibonacci sequence")
+
+# Using a while loop to generate Fibonacci numbers
+while count < n:
+#Print the current Fibonacci number
+print(a, end=" ")
+
+#update the count
+count +=1
+
+# Calculate the next Fibonacci number
+c = a + b
+
+# Update a and b for the next loop
+a = b
+b = c
+
+# Main part of the program
+# Ask the user for the number of terms they want
+num_terms = int(input("Enter how many Fibonacci numbers to generate: "))
+
+# Check if the input is valid
+if num_terms <= 0:
+print("Please enter a positive integer.")
+else:
+# Call the function to generate Fibonacci numbers
+generats_fibonacci(num_terms)
